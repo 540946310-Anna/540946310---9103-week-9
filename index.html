@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Van Gogh Starry Night</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(8, 12, 30);
+            font-family: Arial, sans-serif;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: rgb(255, 225, 150);
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        #canvas {
+            width: 800px;
+            height: 600px;
+            max-width: 95vw;
+            border: 2px solid rgb(60, 80, 130);
+            background-color: rgb(10, 20, 60);
+            box-shadow: 0 0 30px rgba(60, 100, 220, 0.25);
+        }
+
+        #clearButton {
+            margin-top: 20px;
+            padding: 10px 25px;
+            font-size: 16px;
+            color: white;
+            background-color: rgb(40, 65, 120);
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        #clearButton:hover {
+            background-color: rgb(70, 100, 170);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Van Gogh's Starry Night</h1>
+
+    <!-- SVG Drawing Canvas -->
+    <svg
+        id="canvas"
+        width="800"
+        height="600"
+        viewBox="0 0 800 600"
+        xmlns="http://www.w3.org/2000/svg">
+    </svg>
+
+    <!-- Clear Button -->
+    <button id="clearButton">Clear Canvas</button>
+
+    <!-- JavaScript Files -->
+    <script src="utils.js"></script>
+    <script src="sketch.js"></script>
+
+</body>
+</html>
+
